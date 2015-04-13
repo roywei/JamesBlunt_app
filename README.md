@@ -1,5 +1,6 @@
 # JamesBlunt_app
 Android application for singer James Blunt
+
 designed for tablet like nexus 7
 
 following are some screenshots:
