@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_full"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/transparent_full"
+        >
+
+
+
+
+
+        <!--for info-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout_display"
+            android:visibility="gone"
+            android:background="@color/transparent_full">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:gravity="center_horizontal"
+                android:background="@color/transparent"
+                android:textColor="@color/light_blue"
+                android:textSize="32sp">
+            </TextView>
+            <TextView
+                android:id="@+id/bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bio"
+                android:background="@color/transparent"
+                android:textColor="@color/light_blue"
+                android:textSize="24sp" >
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/transparent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/web"
+                    android:text="Website: "
+                    android:textColor="@color/light_blue"
+                    android:textSize="24sp"/>
+                <TextView
+                    android:id="@+id/website"
+                    android:autoLink="web"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weblink" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/transparent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email_text"
+                    android:text="Email: "
+                    android:textColor="@color/light_blue"
+                    android:textSize="24sp"/>
+                <TextView
+                    android:id="@+id/email"
+                    android:autoLink="email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/transparent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sns"
+                    android:text="Social Media: "
+                    android:textColor="@color/light_blue"
+                    android:textSize="24sp"/>
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/fbButton"
+                    android:background="@color/transparent_full"
+                    android:src="@drawable/fb_btn"
+                    />
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/twitterButton"
+                    android:background="@color/transparent_full"
+
+                    android:src="@drawable/twitter_btn"/>
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/insButton"
+                    android:background="@color/transparent_full"
+                    android:src="@drawable/ins_btn"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--for songs-->
+
+        <LinearLayout
+            android:id="@+id/song_display"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@color/transparent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Song 1: Miss America"
+                android:textColor="@color/light_blue"
+                android:textSize="24sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/transparent_full">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/song1_play"
+                    android:src="@drawable/play"
+                    android:background="@color/transparent_full"
+                    android:layout_margin="20dp"
+                    android:onClick="playSong1"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/song1_stop"
+                    android:src="@drawable/stop"
+                    android:background="@color/transparent_full"
+                    android:layout_margin="20dp"
+                    android:onClick="stopSong1"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Song 2: Satellites"
+                android:textColor="@color/light_blue"
+                android:textSize="24sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/transparent_full">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/song2_play"
+                    android:src="@drawable/play"
+                    android:background="@color/transparent_full"
+                    android:layout_margin="20dp"
+                    android:onClick="playSong2"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/song2_stop"
+                    android:src="@drawable/stop"
+                    android:background="@color/transparent_full"
+                    android:layout_margin="20dp"
+                    android:onClick="stopSong2"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--for mvs-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/mv_display"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:background="@color/transparent">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mv1"
+                android:text="MV 1: Bonefire Heart"
+                android:textColor="@color/blue"
+                android:textSize="24dp"
+                android:background="@drawable/mv_btn1"
+                android:layout_marginBottom="2dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mv_btn2"
+                android:text="MV 2: Heart to Heart"
+                android:textColor="@color/blue"
+                android:textSize="24dp"
+                android:id="@+id/mv2"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+

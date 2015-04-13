@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">JamesBlunt</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bio">James Hillier Blount (born 22 February 1974),
+        better known by his stage name James Blunt, is an English singer-songwriter.
+        He had signed with EMI before securing a recording contract with Atlantic Records
+        and Custard Records.
+        \n
+        \nGenre:    Folk Pop / Rock with a dash of Garage
+        \nGender:   Male
+        \nLocation: London
+        \n
+        \nBio: ‘I have never been a beautiful boy.
+        \n \u0020 \u0020 \u0020 \u0020 Never liked the sound of my own voice.
+        \n \u0020 \u0020 \u0020 \u0020 I wasn’t cool when I was in my teens,
+        \n \u0020 \u0020 \u0020 \u0020 I never slept, but I did have dreams.’ – Bones
+        \nMoon Landing is the fourth album by James Blunt.
+        It’s an album about dreams, longing, first love.
+        About looking in the mirror and seeing the boy you were,
+        the man you are – and learning to be comfortable with that, flaws and all.
+        About getting back to basics and rediscovering the power of music to communicate
+        emotion directly and honestly, without too much polish or complication.
+        \n
+    </string>
+    <string name="name">James Blunt</string>
+    <string name="weblink">http://www.jamesblunt.com/splash/smokesignals</string>
+    <string name="email">jamesblunt@jamesblunt.com</string>
+</resources>

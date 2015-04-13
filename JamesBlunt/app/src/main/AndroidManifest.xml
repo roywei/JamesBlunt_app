@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cmu.laiw.jamesblunt" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GalleryActivity"
+            android:label="gallery"
+            android:screenOrientation="landscape">
+
+            </activity>
+        <activity android:name=".VideoActivity"
+            android:label="video"
+            android:screenOrientation="landscape">
+
+            </activity>
+        <activity android:name=".VideoActivity2"
+            android:label="video2"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <service android:name=".PlaySong"
+            android:label="palysong1"></service>
+        <service android:name=".PlaySong2"
+            android:label="palysong2"></service>
+    </application>
+
+</manifest>
